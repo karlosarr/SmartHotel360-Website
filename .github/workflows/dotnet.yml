@@ -23,4 +23,4 @@ jobs:
     - name: Build
       run: dotnet Source/SmartHotel360.Website/SmartHotel360.Website.csproj --configuration Release
     - name: publish
-      run: dotnet publish /home/vsts/work/1/s/Source/SmartHotel360.Website/SmartHotel360.Website.csproj --configuration Release
+      run: dotnet publish Source/SmartHotel360.Website/SmartHotel360.Website.csproj --configuration Release
