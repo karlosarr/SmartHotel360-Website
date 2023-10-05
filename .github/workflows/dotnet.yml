@@ -21,6 +21,6 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Build
-      run: dotnet SmartHotel360-Website/Source/SmartHotel360.Website/SmartHotel360.Website.csproj --configuration Release
+      run: dotnet ${{ github.workspace }}/Source/SmartHotel360.Website/SmartHotel360.Website.csproj --configuration Release
     - name: publish
-      run: dotnet publish SmartHotel360-Website/Source/SmartHotel360.Website/SmartHotel360.Website.csproj --configuration Release
+      run: dotnet publish ${{ github.workspace }}/Source/SmartHotel360.Website/SmartHotel360.Website.csproj --configuration Release
